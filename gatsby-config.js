@@ -17,5 +17,12 @@ module.exports = {
                 path: `${__dirname}/blog`,
             }
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `blog`,
+                path: `${__dirname}/content`, // MDX 文件存放路径
+            },
+        },
     ],
 }
